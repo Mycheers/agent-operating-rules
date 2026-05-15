@@ -10,7 +10,7 @@ Please keep this repository:
 
 ## Skill changes
 
-If you change `cloud-agent-operating-rules/SKILL.md`, keep the YAML frontmatter valid.
+If you change `agent-operating-rules/SKILL.md`, keep the YAML frontmatter valid.
 
 ## Release principle
 

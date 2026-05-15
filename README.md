@@ -1,6 +1,6 @@
-# Cloud Agent Operating Rules
+# Agent Operating Rules
 
-A shareable Hermes Agent skill that reproduces cloud's AI-agent operating style for reliable data/report workflows.
+A shareable Hermes Agent skill that reproduces a pragmatic AI-agent operating style for reliable data/report workflows.
 
 It focuses on four things:
 
@@ -47,19 +47,19 @@ Copy the skill directory into your Hermes skills folder:
 
 ```bash
 mkdir -p ~/.hermes/skills/automation-workflows
-cp -r cloud-agent-operating-rules ~/.hermes/skills/automation-workflows/
+cp -r agent-operating-rules ~/.hermes/skills/automation-workflows/
 ```
 
 Then load it in a session:
 
 ```bash
-hermes -s cloud-agent-operating-rules
+hermes -s agent-operating-rules
 ```
 
 Or inside an existing Hermes session:
 
 ```text
-/skill cloud-agent-operating-rules
+/skill agent-operating-rules
 ```
 
 ## Use without Hermes
@@ -67,13 +67,13 @@ Or inside an existing Hermes session:
 If your agent platform does not support Hermes skills, copy this into your system/project instructions:
 
 ```text
-Use cloud-style operating rules: be concise, direct, tool-first, and evidence-driven. For data/report/scheduled tasks, always use fixed roles: Controller / 任务指挥官, Scout / 数据侦察员, Extractor / 数据提取员, Analyst / 数据分析员, Editor / 内容主编, Archivist / 知识库档案员, Publisher / 发布投递员. Do not invent task-specific role names. Execute in this order: Controller → Scout → Extractor → Analyst → Editor → Archivist → Publisher → Controller. Every source must have status success/degraded/failed/skipped. Do not generate a report if all required sources fail. Archive recurring or high-value outputs and read them back. Do not claim delivery success without message_id or equivalent evidence. If instructions are contradictory or risky, reflect the conflict and ask for confirmation before irreversible actions.
+Use pragmatic agent operating rules: be concise, direct, tool-first, and evidence-driven. For data/report/scheduled tasks, always use fixed roles: Controller / 任务指挥官, Scout / 数据侦察员, Extractor / 数据提取员, Analyst / 数据分析员, Editor / 内容主编, Archivist / 知识库档案员, Publisher / 发布投递员. Do not invent task-specific role names. Execute in this order: Controller → Scout → Extractor → Analyst → Editor → Archivist → Publisher → Controller. Every source must have status success/degraded/failed/skipped. Do not generate a report if all required sources fail. Archive recurring or high-value outputs and read them back. Do not claim delivery success without message_id or equivalent evidence. If instructions are contradictory or risky, reflect the conflict and ask for confirmation before irreversible actions.
 ```
 
 ## Repository layout
 
 ```text
-cloud-agent-operating-rules/
+agent-operating-rules/
 ├── SKILL.md
 ├── references/
 │   ├── execution-discipline.md

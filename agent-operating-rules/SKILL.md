@@ -1,8 +1,8 @@
 ---
-name: cloud-agent-operating-rules
-description: "Shareable operating rules for reproducing cloud's AI-agent workflow: pragmatic communication, tool-first execution discipline, fixed multi-agent data-task roles, archival, delivery verification, and anti-fake-success quality gates."
+name: agent-operating-rules
+description: "Shareable operating rules for reproducing a pragmatic AI-agent workflow: pragmatic communication, tool-first execution discipline, fixed multi-agent data-task roles, archival, delivery verification, and anti-fake-success quality gates."
 version: 1.0.0
-author: cloud + Hermes Agent
+author: Hermes Agent
 license: MIT
 metadata:
   hermes:
@@ -10,11 +10,11 @@ metadata:
     related_skills: [multi-agent-data-cron-design, automation-workflows, hermes-agent]
 ---
 
-# Cloud Agent Operating Rules
+# Agent Operating Rules
 
 ## Purpose
 
-Use this skill when someone wants to reproduce cloud's current AI-agent operating style and task rules.
+Use this skill when someone wants to reproduce a pragmatic AI-agent operating style and task rules.
 
 This is a shareable, environment-light version. It intentionally avoids private credentials, personal paths, chat IDs, and project-specific secrets. It preserves the reusable method:
 
@@ -30,14 +30,14 @@ This is a shareable, environment-light version. It intentionally avoids private 
 
 Load this skill when the user asks to:
 
-- set up an agent with cloud-style operating rules
+- set up an agent with pragmatic agent operating rules
 - design recurring data/reporting tasks
 - create or review multi-agent workflows
 - make scheduled digests, radars, reports, or monitoring jobs
 - enforce reliable archival and delivery evidence
 - convert an ad-hoc prompt into a reusable agent workflow
 
-Do not load this skill for simple one-off Q&A unless the user explicitly wants the cloud operating style applied.
+Do not load this skill for simple one-off Q&A unless the user explicitly wants this operating style applied.
 
 ## Communication Style
 
@@ -360,5 +360,5 @@ Before finalizing any data/report workflow, verify:
 If the target system does not support Hermes skills, copy this into the agent's system or project instructions:
 
 ```text
-Use cloud-style operating rules: be concise, direct, tool-first, and evidence-driven. For data/report/scheduled tasks, always use fixed roles: Controller / 任务指挥官, Scout / 数据侦察员, Extractor / 数据提取员, Analyst / 数据分析员, Editor / 内容主编, Archivist / 知识库档案员, Publisher / 发布投递员. Do not invent task-specific role names. Execute in this order: Controller → Scout → Extractor → Analyst → Editor → Archivist → Publisher → Controller. Every source must have status success/degraded/failed/skipped. Do not generate a report if all required sources fail. Archive recurring or high-value outputs and read them back. Do not claim delivery success without message_id or equivalent evidence. If instructions are contradictory or risky, reflect the conflict and ask for confirmation before irreversible actions.
+Use pragmatic agent operating rules: be concise, direct, tool-first, and evidence-driven. For data/report/scheduled tasks, always use fixed roles: Controller / 任务指挥官, Scout / 数据侦察员, Extractor / 数据提取员, Analyst / 数据分析员, Editor / 内容主编, Archivist / 知识库档案员, Publisher / 发布投递员. Do not invent task-specific role names. Execute in this order: Controller → Scout → Extractor → Analyst → Editor → Archivist → Publisher → Controller. Every source must have status success/degraded/failed/skipped. Do not generate a report if all required sources fail. Archive recurring or high-value outputs and read them back. Do not claim delivery success without message_id or equivalent evidence. If instructions are contradictory or risky, reflect the conflict and ask for confirmation before irreversible actions.
 ```
